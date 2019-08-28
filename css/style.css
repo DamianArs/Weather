@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/weather1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: centers;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+header {
+    display: flex;
+    border-bottom: 5px solid #bbb;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+}
+
+header article {
+    margin: 10px;
+    padding: 5px;
+}
+
+.choice {
+    flex-basis: 60%;
+    order: 1;
+    text-transform: uppercase;
+}
+
+.choice input {
+    margin: 5px;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 139, .5);
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+.date {
+    flex-basis: 40%;
+}
+
+.hour {
+    flex-basis: 40%;
+}
+
+@media(min-width: 768px) {
+    header {
+        font-size: 32px;
+    }
+
+    .choice input {
+        margin: 10px;
+        font-size: 32px;
+    }
+}
+
+@media(min-width: 812px) and (max-width: 824px) and (orientation: landscape) {
+    header {
+        font-size: 18px;
+    }
+
+    .choice input {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        font-size: 28px;
+    }
+
+    .choice input {
+        font-size: 18px;
+    }
+
+    header article {
+        flex-grow: 1;
+    }
+
+    .date {
+        order: 2;
+        flex-basis: 25%;
+    }
+
+    .choice {
+        order: 1;
+        flex-basis: 40%;
+    }
+
+    .hour {
+        order: 3;
+        flex-basis: 20%;
+    }
+}
+
+.table {
+    width: 90vw;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, .3);
+    height: 20vh;
+    display: flex;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.table section {
+    flex-basis: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.images img {
+    width: 80%;
+    max-width: 120px;
+    flex-basis: 50%;
+}
+
+section .result,
+.day1,
+.day2,
+.day3,
+.day4,
+.day5,
+.d1,
+.d2,
+.d3,
+.d4,
+.d5 {
+    font-size: 12px;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.forecastHow h1 {
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+@media(min-width: 411px) and (orientation: portrait) {
+
+    section .result,
+    .day1,
+    .day2,
+    .day3,
+    .day4,
+    .day5,
+    .d1,
+    .d2,
+    .d3,
+    .d4,
+    .d5 {
+        font-size: 16px;
+    }
+}
+
+@media(min-width:768px) and (orientation: portrait) {
+
+    section .result,
+    .day1,
+    .day2,
+    .day3,
+    .day4,
+    .day5,
+    .d1,
+    .d2,
+    .d3,
+    .d4,
+    .d5 {
+        font-size: 28px;
+    }
+
+    .forecastHow h1 {
+        font-size: 28px;
+
+    }
+
+}
+
+@media (orientation: landscape) {
+
+    .table {
+        height: 40vh;
+    }
+
+    .images img {
+        width: 70%;
+    }
+
+}
+
+@media(orientation: landscape) {
+
+    section .result,
+    .day1,
+    .day2,
+    .day3,
+    .day4,
+    .day5,
+    .d1,
+    .d2,
+    .d3,
+    .d4,
+    .d5 {
+        font-size: 16px;
+    }
+
+    .forecastHow h1 {
+        font-size: 28px;
+
+    }
+
+}
+
+@media(min-width:1024px) {
+
+    section .result,
+    .day1,
+    .day2,
+    .day3,
+    .day4,
+    .day5,
+    .d1,
+    .d2,
+    .d3,
+    .d4,
+    .d5 {
+        font-size: 36px;
+    }
+
+    .table {
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .forecastHow h1 {
+        font-size: 36px;
+
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 2vh;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (orientation: landscape) {
+    footer {
+        position: static;
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        font-size: 24px;
+    }
+}

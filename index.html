@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <article class="choice">
+                <input type="text" class="city" placeholder="podaj miasto">
+                <section class="forecast">
+                    <h1>pogoda <span class="here"></span></h1>
+                </section>
+            </article>
+            <article class="date"></article>
+            <article class="hour"></article>
+        </header>
+        <main class="table">
+            <section>
+                <div class="images"><img src="./images/tempicon.png" alt="temerature" title="Temperature"></div>
+                <div class="result temp"></div>
+            </section>
+            <section>
+                <div class="images"><img src="./images/pressure.png" alt="pressure" title="Pressure"></div>
+                <div class="result pressure"></div>
+            </section>
+            <section>
+                <div class="images"><img src="./images/humidity.png" alt="humidity" title="Humidity"></div>
+                <div class="result humidity"></div>
+            </section>
+            <section>
+                <div class="images"><img src="./images/clouds.png" alt="clouds" title="Clouds"></div>
+                <div class="result clouds"></div>
+            </section>
+
+            <section>
+                <div class="images"><img src="./images/wind.png" alt="wind" title="Wind"></div>
+                <div class="result wind"></div>
+            </section>
+        </main>
+        <!-- forecast -->
+        <div class="forecastHow">
+            <h1>PROGNOZA NA 5 DNI</h1>
+        </div>
+        <article class="table">
+            <section>
+                <div class="d1">
+                    <h1></h1>
+                </div>
+                <div class="day1"></div>
+            </section>
+            <section>
+                <div class="d2">
+                    <h1></h1>
+                </div>
+                <div class="day2"></div>
+            </section>
+            <section>
+                <div class="d3">
+                    <h1></h1>
+                </div>
+                <div class="day3"></div>
+            </section>
+            <section>
+                <div class="d4">
+                    <h1></h1>
+                </div>
+                <div class="day4"></div>
+            </section>
+            <section>
+                <div class="d5">
+                    <h1></h1>
+                </div>
+                <div class="day5"></div>
+            </section>
+        </article>
+        <footer>
+            <p>Copyright &copy; 2019, Damian Arsenicz</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
